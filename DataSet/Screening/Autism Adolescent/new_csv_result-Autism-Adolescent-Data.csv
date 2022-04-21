@@ -1,0 +1,105 @@
+,A1_Score,A2_Score,A3_Score,A4_Score,A5_Score,A6_Score,A7_Score,A8_Score,A9_Score,A10_Score,age,gender,ethnicity,jundice,austim,contry_of_res,used_app_before,result,age_desc,relation,Class/ASD
+0,0,0,0,1,1,1,1,1,1,0,15,1,Hispanic,1,1,Austria,0,6,12-16 years,Parent,0
+1,0,0,0,0,0,0,0,0,1,1,15,1,Black,0,0,Austria,0,2,12-16 years,Relative,0
+2,0,0,0,0,0,0,0,0,1,1,12,0,?,0,0,AmericanSamoa,0,2,12-16 years,Self,0
+3,0,1,1,1,1,1,0,1,1,0,14,0,White-European,0,0,United Kingdom,0,7,12-16 years,Self,1
+4,1,1,1,1,1,1,1,0,0,0,16,0,?,0,0,Albania,0,7,12-16 years,Self,1
+5,1,0,0,0,0,1,0,0,1,0,13,0,?,0,0,Belgium,0,3,12-16 years,Self,0
+6,0,0,0,1,1,1,1,1,1,0,16,0,?,0,0,Afghanistan,0,6,12-16 years,Self,0
+7,1,1,0,1,1,0,1,1,0,1,15,0,Middle Eastern ,0,0,Australia,0,7,12-16 years,Parent,1
+8,1,1,1,1,1,1,0,0,0,0,12,1,Black,1,1,Bahrain,0,6,12-16 years,Parent,0
+9,0,1,1,0,0,1,0,0,1,0,12,0,South Asian,0,0,Azerbaijan,0,4,12-16 years,Parent,0
+10,1,0,0,0,1,1,0,1,1,0,13,0,Middle Eastern ,1,0,United Arab Emirates,0,5,12-16 years,Parent,0
+11,1,0,0,0,1,1,0,0,1,1,13,0,White-European,0,0,United Kingdom,0,5,12-16 years,Self,0
+12,1,0,0,1,1,1,0,1,1,1,12,0,Others,0,0,United Kingdom,0,7,12-16 years,Self,1
+13,1,1,1,1,1,1,0,1,1,1,12,0,Others,0,0,United Kingdom,0,9,12-16 years,Parent,1
+14,1,0,1,1,1,1,0,1,1,1,12,0,Others,0,0,United Kingdom,0,8,12-16 years,Self,1
+15,1,1,0,1,1,1,1,1,1,1,15,0,White-European,0,1,United Kingdom,0,9,12-16 years,Parent,1
+16,1,0,0,0,1,0,0,1,0,1,12,0,Others,1,1,United Kingdom,0,4,12-16 years,Parent,0
+17,1,0,1,1,1,1,0,1,1,1,12,0,Others,0,0,United Kingdom,0,8,12-16 years,Parent,1
+18,1,1,1,1,1,0,0,1,1,0,13,0,White-European,0,0,United Kingdom,0,7,12-16 years,Parent,1
+19,1,1,1,0,1,1,1,0,1,1,12,1,White-European,0,0,United Kingdom,0,8,12-16 years,Parent,1
+20,0,0,1,1,1,1,0,1,1,1,12,0,Others,0,0,United Kingdom,0,7,12-16 years,Parent,1
+21,1,1,1,1,0,1,1,1,1,1,14,1,White-European,0,0,New Zealand,0,9,12-16 years,Parent,1
+22,1,1,1,1,1,1,1,1,1,1,15,0,White-European,0,0,Australia,0,10,12-16 years,Parent,1
+23,1,0,1,1,1,1,1,1,1,1,13,1,Middle Eastern ,0,1,United States,0,9,12-16 years,Parent,1
+24,1,1,1,1,1,1,1,1,1,1,14,1,Hispanic,0,0,Argentina,0,10,12-16 years,Self,1
+25,1,0,1,1,1,1,0,1,1,1,12,0,Others,0,0,United Kingdom,0,8,12-16 years,Health care professional,1
+26,1,1,0,1,0,0,0,0,0,0,12,1,Middle Eastern ,0,0,Jordan,0,3,12-16 years,Self,0
+27,1,0,1,1,1,0,0,0,1,1,14,0,White-European,0,0,Canada,0,6,12-16 years,Self,0
+28,1,1,0,0,0,0,1,0,1,0,13,1,?,0,0,Afghanistan,0,4,12-16 years,Self,0
+29,0,1,1,1,1,1,1,1,1,1,16,1,Others,0,0,United Kingdom,0,9,12-16 years,Parent,1
+30,1,0,1,1,1,1,0,1,1,1,14,0,White-European,0,0,United Kingdom,0,8,12-16 years,Self,1
+31,1,1,1,1,1,1,0,0,0,1,13,1,White-European,0,0,United Kingdom,0,7,12-16 years,Self,1
+32,1,0,1,1,1,1,0,1,1,1,16,0,White-European,0,0,United States,0,8,12-16 years,Self,1
+33,1,1,1,1,1,1,1,0,1,1,12,1,Middle Eastern ,1,0,United States,0,9,12-16 years,Parent,1
+34,1,0,1,1,1,1,1,1,1,1,14,0,Others,0,0,Canada,0,9,12-16 years,Self,1
+35,1,1,1,1,0,1,1,1,1,1,16,0,Latino,0,1,Brazil,0,9,12-16 years,Self,1
+36,1,0,1,1,1,1,1,1,1,1,15,0,Black,0,0,United States,0,9,12-16 years,Self,1
+37,0,0,1,1,1,1,1,1,1,1,14,0,Others,0,0,Canada,0,8,12-16 years,Self,1
+38,0,0,1,1,1,1,1,1,1,1,12,1,White-European,0,0,United States,0,8,12-16 years,Relative,1
+39,0,0,1,1,1,1,1,1,1,1,12,1,White-European,0,0,United States,0,8,12-16 years,Relative,1
+40,1,0,1,0,1,1,1,1,1,1,15,1,White-European,0,0,Croatia,0,8,12-16 years,Health care professional,1
+41,1,1,0,0,1,1,0,0,1,0,13,0,Others,1,1,United States,0,5,12-16 years,Self,0
+42,1,0,0,0,1,1,0,0,0,0,16,1,Hispanic,0,0,Argentina,0,3,12-16 years,Self,0
+43,0,1,1,1,1,1,1,1,1,1,16,1,Hispanic,0,0,Argentina,0,9,12-16 years,Self,1
+44,0,0,1,1,1,1,1,1,1,0,15,0,White-European,0,0,Argentina,0,7,12-16 years,Parent,1
+45,1,1,1,1,1,1,1,1,1,1,16,1,Asian,1,0,India,0,10,12-16 years,Relative,1
+46,0,1,1,1,1,1,1,1,1,1,16,1,Asian,1,0,India,1,9,12-16 years,Relative,1
+47,1,1,1,1,0,1,0,0,1,0,12,1,Asian,0,0,Bangladesh,0,6,12-16 years,Parent,0
+48,1,1,1,0,1,1,1,1,1,1,12,0,Black,0,0,France,0,9,12-16 years,Parent,1
+49,1,1,0,1,1,1,0,0,1,1,14,0,South Asian,0,0,United Kingdom,0,7,12-16 years,Self,1
+50,0,0,1,1,0,1,0,1,1,1,13,1,Asian,0,0,Indonesia,0,6,12-16 years,Parent,0
+51,0,1,1,1,1,1,1,1,1,1,13,1,Asian,0,0,Indonesia,0,9,12-16 years,Parent,1
+52,1,0,0,1,1,1,0,1,1,1,16,0,Black,0,0,United States,0,7,12-16 years,Self,1
+53,0,0,0,1,1,1,0,0,0,1,13,1,Middle Eastern ,0,0,Egypt,0,4,12-16 years,Others,0
+54,1,0,0,0,0,0,0,0,0,0,15,0,Hispanic,0,0,Argentina,0,1,12-16 years,Self,0
+55,0,0,0,1,0,0,1,1,0,0,15,1,Latino,0,0,Argentina,0,3,12-16 years,Self,0
+56,0,1,0,0,0,0,0,0,0,0,15,1,Black,0,0,Argentina,0,1,12-16 years,Parent,0
+57,1,1,1,1,1,1,1,1,0,0,16,1,White-European,0,0,Argentina,0,8,12-16 years,Self,1
+58,0,0,0,0,0,0,1,0,0,0,16,1,Latino,0,0,Argentina,0,1,12-16 years,Self,0
+59,1,1,1,1,1,1,1,1,1,1,16,1,Latino,0,0,Argentina,0,10,12-16 years,Self,1
+60,1,1,1,1,1,1,1,1,1,1,12,0,White-European,0,1,United Kingdom,0,10,12-16 years,Self,1
+61,1,1,0,0,0,0,0,1,0,0,16,0,White-European,0,0,United Kingdom,0,3,12-16 years,Self,0
+62,0,0,1,1,1,1,1,1,1,1,16,0,White-European,0,0,Netherlands,0,8,12-16 years,Parent,1
+63,1,0,1,1,1,1,0,0,1,1,16,0,White-European,1,0,Greenland,0,7,12-16 years,Self,1
+64,1,0,1,1,1,0,1,1,1,0,14,0,White-European,0,1,United Kingdom,0,7,12-16 years,Self,1
+65,1,0,1,1,1,1,0,1,1,1,15,0,White-European,0,0,Austria,0,8,12-16 years,Health care professional,1
+66,1,0,1,1,1,1,0,1,1,1,15,0,Asian,0,0,Bahamas,0,8,12-16 years,Self,1
+67,0,0,1,0,1,1,1,0,0,0,16,1,White-European,0,0,Netherlands,0,4,12-16 years,Others,0
+68,1,1,1,1,1,1,0,0,1,1,13,0,White-European,0,0,United States,0,8,12-16 years,Self,1
+69,1,1,0,0,1,0,1,1,1,1,14,1,Others,0,0,United Kingdom,0,7,12-16 years,Self,1
+70,1,1,0,0,0,1,0,1,1,1,13,0,White-European,0,1,Belgium,1,6,12-16 years,Health care professional,0
+71,0,1,0,1,1,1,0,1,1,1,16,0,White-European,0,0,United States,0,7,12-16 years,Self,1
+72,1,1,1,1,0,1,0,0,1,1,12,0,Black,0,1,United Kingdom,0,7,12-16 years,Self,1
+73,1,1,1,1,1,1,0,1,1,0,12,1,White-European,0,0,Albania,0,8,12-16 years,Health care professional,1
+74,1,1,1,1,1,1,1,0,1,0,16,1,Asian,0,0,United Kingdom,0,8,12-16 years,Parent,1
+75,1,1,1,0,1,0,1,0,1,0,16,1,Asian,0,1,United Kingdom,0,6,12-16 years,Self,0
+76,1,1,1,1,1,1,1,0,1,1,14,0,White-European,0,0,South Africa,0,9,12-16 years,Parent,1
+77,1,1,0,0,1,0,1,0,0,0,12,1,Asian,1,0,Viet Nam,0,4,12-16 years,Self,0
+78,1,1,1,1,1,1,1,1,1,0,14,1,White-European,0,0,United States,0,9,12-16 years,Parent,1
+79,1,0,1,1,0,1,1,1,1,1,16,0,White-European,1,0,United Kingdom,0,8,12-16 years,Parent,1
+80,0,0,1,1,0,1,0,1,1,1,13,0,Black,0,0,AmericanSamoa,0,6,12-16 years,Parent,0
+81,1,0,0,0,1,1,0,1,0,0,16,1,South Asian,0,0,Comoros,0,4,12-16 years,Self,0
+82,1,1,1,0,1,1,1,0,1,1,16,1,Asian,0,0,Portugal,0,8,12-16 years,Relative,1
+83,1,1,0,1,1,1,0,0,1,0,15,1,White-European,0,0,Croatia,0,6,12-16 years,Self,0
+84,1,0,0,1,1,1,0,0,1,1,14,1,White-European,0,0,Finland,0,6,12-16 years,Parent,0
+85,0,0,1,1,1,0,1,1,1,1,16,1,Asian,1,0,India,0,7,12-16 years,Others,1
+86,1,1,1,1,1,1,1,0,1,1,16,1,Asian,1,0,India,0,9,12-16 years,Relative,1
+87,0,1,1,1,0,0,0,1,1,1,16,0,White-European,1,0,United Kingdom,0,6,12-16 years,Self,0
+88,1,1,1,1,1,1,0,0,1,1,14,1,White-European,0,0,United Kingdom,0,8,12-16 years,Parent,1
+89,1,0,1,0,0,1,0,0,1,1,13,1,White-European,0,0,Norway,0,5,12-16 years,Self,0
+90,1,1,0,1,1,1,1,1,1,1,16,1,White-European,0,0,United States,0,9,12-16 years,Self,1
+91,1,1,0,1,1,1,1,1,1,1,15,1,White-European,1,1,United Kingdom,0,9,12-16 years,Self,1
+92,1,0,1,0,1,0,1,0,0,0,12,1,Asian,0,0,India,1,4,12-16 years,Relative,0
+93,1,1,1,0,1,1,0,0,1,1,16,1,White-European,1,0,Ireland,0,7,12-16 years,Self,1
+94,1,1,0,1,0,0,1,1,0,0,15,1,Asian,0,0,Indonesia,0,5,12-15 years,Self,0
+95,1,1,1,0,1,1,1,1,1,1,15,0,Middle Eastern ,0,1,Egypt,0,9,12-15 years,Parent,1
+96,1,1,1,1,1,1,1,1,0,0,16,0,Latino,0,0,Austria,0,8,12-15 years,Health care professional,1
+97,1,0,0,0,1,0,0,1,0,1,15,0,?,0,0,Argentina,0,4,12-15 years,Self,0
+98,0,1,1,1,0,1,1,0,1,0,12,0,Middle Eastern ,0,0,Austria,0,6,12-15 years,Parent,0
+99,0,1,1,1,0,1,1,0,1,0,16,0,Middle Eastern ,0,0,Anguilla,1,6,12-15 years,Parent,0
+100,1,0,1,0,0,0,0,1,0,1,16,1,Asian,0,0,India,0,4,12-15 years,Parent,0
+101,1,0,0,1,1,1,1,1,1,1,12,0,White-European,0,0,United Kingdom,0,8,12-16 years,Self,1
+102,1,1,0,1,1,0,0,0,1,1,13,0,White-European,0,0,United Kingdom,0,6,12-16 years,Self,0
+103,1,0,1,0,0,1,1,1,1,0,12,1,Asian,0,0,India,0,6,12-16 years,Parent,0
