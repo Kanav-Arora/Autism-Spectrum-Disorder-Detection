@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "autism-spectrum-disorder-detection"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "autism_spectrum_disorder_detection" }]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+flask = "^2.2.2"
+pandas = "^1.5.1"
+seaborn = "^0.12.1"
+opencv-python = "^4.6.0.66"
+pillow = "^9.3.0"
+matplotlib = "^3.6.2"
+scikit-learn = "^1.1.3"
+scipy = "^1.9.3"
+keras = "^2.11.0"
+tensorflow = "^2.11.0"
+cvxopt = "^1.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
