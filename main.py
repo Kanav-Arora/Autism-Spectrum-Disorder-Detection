@@ -36,7 +36,6 @@ st.write(
 )
 
 answers = ["" for _ in range(len(data))]
-prediction = None
 
 
 def get_clean_answer(answer):
@@ -53,7 +52,7 @@ def to_category(options, chosen):
     return options.index(chosen)
 
 
-with st.form("questions", True):
+with st.form("questions"):
     for idx, question in enumerate(data):
         question_type = question.get("type", "boolean")
         if question_type == "boolean":
@@ -80,9 +79,8 @@ with st.form("questions", True):
         inputs = cleaned_answers[:10] + list(final_input.values())
         prediction = screening_voting.predict([inputs])
 
-if prediction:
-    st.header("Results")
-    if prediction[0] == 1:
-        st.warning("Subject may have Autism Spectrum Disorder")
-    else:
-        st.success("Subject does not have Autism Spectrum Disorder")
+        st.header("Results")
+        if prediction[0] == 1:
+            st.warning("Subject may have Autism Spectrum Disorder")
+        else:
+            st.success("Subject does not have Autism Spectrum Disorder")
