@@ -1,5 +1,5 @@
 data = [
-    {"text": "Poor eye contact, or staring from unusual angle "},
+    {"text": "Poor eye contact, or staring from unusual angle"},
     {"text": "Inappropriately anxious, scared"},
     {"text": "Lack of curiosity about the environment"},
     {"text": "Inappropriate crying or laughing"},
@@ -17,7 +17,7 @@ data = [
     {
         "text": "Gender",
         "type": "select",
-        "options": ("Male", "Female", "Prefer not to say"),
+        "options": ("Male", "Female"),
     },
     {
         "text": "Ethnicity",
@@ -47,4 +47,9 @@ data = [
         ),
     },
     {"text": "Has austim"},
+    {
+        "text": "Age description",
+        "type": "select",
+        "options": ("Toddler", "Child", "Teenager", "Adult"),
+    },
 ]
