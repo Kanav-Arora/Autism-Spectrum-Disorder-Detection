@@ -1,6 +1,28 @@
+import pickle
+
+import pandas as pd
 import streamlit as st
+from sklearn.ensemble import VotingClassifier
+from sklearn.model_selection import train_test_split
 
 from questions import data
+
+screening = pd.read_csv("./DataSet/Screening/data.csv")
+screening.drop("Unnamed: 0", axis=1, inplace=True)
+x = screening.iloc[:, :-1]
+y = screening.iloc[:, -1]
+x_train, x_test, y_train, y_test = train_test_split(
+    x, y, test_size=0.2, random_state=42
+)
+
+estimators = [
+    ("lr", pickle.load(open("Screening/logistic_regression_screening.sav", "rb"))),
+    ("svc", pickle.load(open("Screening/svc_screening.sav", "rb"))),
+    ("knn", pickle.load(open("Screening/knn_screening.sav", "rb"))),
+    ("naive", pickle.load(open("Screening/naive_screening.sav", "rb"))),
+]
+screening_voting = VotingClassifier(estimators=estimators, voting="hard")
+screening_voting.fit(x_train, y_train)
 
 st.title("Autism Spectrum Disorder Screening")
 
@@ -14,6 +36,7 @@ st.write(
 )
 
 answers = ["" for _ in range(len(data))]
+prediction = None
 
 
 def get_clean_answer(answer):
@@ -54,4 +77,12 @@ with st.form("questions", True):
             "autism": cleaned_answers[15],
             "age_desc": to_category(data[16]["options"], cleaned_answers[16]),
         }
-        final_input
+        inputs = cleaned_answers[:10] + list(final_input.values())
+        prediction = screening_voting.predict([inputs])
+
+if prediction:
+    st.header("Results")
+    if prediction[0] == 1:
+        st.warning("Subject may have Autism Spectrum Disorder")
+    else:
+        st.success("Subject does not have Autism Spectrum Disorder")
