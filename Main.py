@@ -35,7 +35,12 @@ def screen_load():
         x, y, test_size=0.2, random_state=42
     )
     estimators = [
-        ("lr", pickle.load(open("Screening/logistic_regression_screening.sav", "rb"))),
+        (
+            "lr",
+            pickle.load(
+                open("Screening/logistic_regression_screening.sav", "rb")
+            ),
+        ),
         ("svc", pickle.load(open("Screening/svc_screening.sav", "rb"))),
         ("knn", pickle.load(open("Screening/knn_screening.sav", "rb"))),
         ("naive", pickle.load(open("Screening/naive_screening.sav", "rb"))),
@@ -76,14 +81,18 @@ def load_image():
     for images in glob.iglob(f"{dir}/*"):
         ori_label.append(1)
         new_img = Image.open(images)
-        ori_imgs.append(ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB"))
+        ori_imgs.append(
+            ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB")
+        )
 
     dir = "./DataSet/Images/Non_Autistic/train/"
 
     for images in glob.iglob(f"{dir}/*"):
         ori_label.append(0)
         new_img = Image.open(images)
-        ori_imgs.append(ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB"))
+        ori_imgs.append(
+            ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB")
+        )
 
     imgs = np.array([np.array(im) for im in ori_imgs])
     imgs = np.array([cv2.resize(im, (32, 32)).flatten() for im in imgs])
@@ -97,22 +106,34 @@ def load_image():
     for images in glob.iglob(f"{dir}/*"):
         output.append(1)
         new_img = Image.open(images)
-        ti.append(ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB"))
+        ti.append(
+            ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB")
+        )
 
     dir = "./DataSet/Images/Non_Autistic/test/"
 
     for images in glob.iglob(f"{dir}/*"):
         output.append(0)
         new_img = Image.open(images)
-        ti.append(ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB"))
+        ti.append(
+            ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB")
+        )
 
     ti = np.array([np.array(im) for im in ti])
     ti = np.array([cv2.resize(im, (32, 32)).flatten() for im in ti])
 
     estimators = [
-        ("lr", pickle.load(open("Image Classification/logistic_regression.sav", "rb"))),
+        (
+            "lr",
+            pickle.load(
+                open("Image Classification/logistic_regression.sav", "rb")
+            ),
+        ),
         ("knn", pickle.load(open("Image Classification/knn.sav", "rb"))),
-        ("naive", pickle.load(open("Image Classification/naive_bayes.sav", "rb"))),
+        (
+            "naive",
+            pickle.load(open("Image Classification/naive_bayes.sav", "rb")),
+        ),
         ("svc", pickle.load(open("Image Classification/svc.sav", "rb"))),
     ]
 
@@ -162,7 +183,9 @@ with st.form("survey"):
         screening_prediction = screening_voting.predict([inputs])
         ri = []
         new_img = Image.open(picture)
-        ri.append(ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB"))
+        ri.append(
+            ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB")
+        )
         ri = np.array([np.array(im) for im in ri])
         ri = np.array([cv2.resize(im, (32, 32)).flatten() for im in ri])
         image_prediction = image_voting.predict(ri)
