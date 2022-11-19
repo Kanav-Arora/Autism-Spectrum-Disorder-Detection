@@ -7,6 +7,9 @@ from sklearn.model_selection import train_test_split
 
 from questions import data
 
+st.title("Screening method")
+st.header("Please answer the following questions as honestly as possible.")
+
 screening = pd.read_csv("./DataSet/Screening/data.csv")
 screening.drop("Unnamed: 0", axis=1, inplace=True)
 x = screening.iloc[:, :-1]
@@ -14,7 +17,6 @@ y = screening.iloc[:, -1]
 x_train, x_test, y_train, y_test = train_test_split(
     x, y, test_size=0.2, random_state=42
 )
-
 estimators = [
     ("lr", pickle.load(open("Screening/logistic_regression_screening.sav", "rb"))),
     ("svc", pickle.load(open("Screening/svc_screening.sav", "rb"))),
@@ -24,16 +26,6 @@ estimators = [
 screening_voting = VotingClassifier(estimators=estimators, voting="hard")
 screening_voting.fit(x_train, y_train)
 
-st.title("Autism Spectrum Disorder Screening")
-
-st.write(
-    "This is a screening tool for Autism Spectrum Disorder. Please answer the "
-    "following questions as honestly as possible."
-)
-st.write(
-    "Please note that this is not a diagnostic tool. If you suspect that you "
-    "or someone you know may have ASD, please consult a medical professional."
-)
 
 answers = ["" for _ in range(len(data))]
 
