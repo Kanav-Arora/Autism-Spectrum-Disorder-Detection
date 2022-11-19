@@ -165,5 +165,6 @@ with st.form("survey"):
         ri.append(ImageOps.fit(new_img, (64, 64), Image.ANTIALIAS).convert("RGB"))
         ri = np.array([np.array(im) for im in ri])
         ri = np.array([cv2.resize(im, (32, 32)).flatten() for im in ri])
-        image_voting.predict(ri)
+        image_prediction = image_voting.predict(ri)
         display_results(screening_prediction)
+        print(image_prediction)
