@@ -25,4 +25,6 @@ RUN poetry config virtualenvs.create false \
 # Creating folders, and files for a project:
 COPY . /code
 
+RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+
 ENTRYPOINT streamlit run Main.py --server.port=80 --server.address=0.0.0.0
