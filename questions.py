@@ -46,7 +46,7 @@ data = [
             "Others",
         ),
     },
-    {"text": "Has austim"},
+    {"text": "Autism in blood relations"},
     {
         "text": "Age description",
         "type": "select",
