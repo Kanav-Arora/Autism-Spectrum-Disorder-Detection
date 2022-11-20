@@ -13,7 +13,11 @@ from sklearn.preprocessing import LabelBinarizer
 from questions import data
 from utils import display_results
 
-st.title("Autism Spectrum Disorder Screening")
+asdd = "Autism Spectrum Disorder Detection"
+
+st.set_page_config(page_title=asdd, page_icon=':brain:')
+
+st.title(asdd)
 
 st.write(
     "This is a screening tool for Autism Spectrum Disorder. Please answer the "
