@@ -2,10 +2,7 @@ FROM python:3.10-slim
 
 RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
 
-ARG YOUR_ENV
-
-ENV YOUR_ENV=${YOUR_ENV} \
-  PYTHONFAULTHANDLER=1 \
+ENV PYTHONFAULTHANDLER=1 \
   PYTHONUNBUFFERED=1 \
   PYTHONHASHSEED=random \
   PIP_NO_CACHE_DIR=off \
@@ -22,7 +19,7 @@ COPY poetry.lock pyproject.toml /code/
 
 # Project initialization:
 RUN poetry config virtualenvs.create false \
-  && poetry install --no-root $(test "$YOUR_ENV" == production && echo "--no-dev") --no-interaction --no-ansi
+  && poetry install --no-root --no-interaction --no-ansi --only main
 
 # Creating folders, and files for a project:
 COPY . /code
